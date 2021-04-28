@@ -19,7 +19,8 @@
 #v5{
   width:50px;
   display:block;
-  margin:0 auto
+  margin:0 auto;
+  padding-left:5px
 }
 #a3{
   background-color:white;
