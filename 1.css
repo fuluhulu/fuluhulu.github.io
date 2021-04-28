@@ -30,6 +30,7 @@
   display:block;
   margin:300px auto;
   border-radius:10px;
+  box-shadow:4px 4px 4px rgb(160,160,160)
 }
 #v1{
   background-attachment:fixed;
