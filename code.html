@@ -24,8 +24,27 @@
 
         }
 
-    </style> 
-  <script src="js/jq.js"></script> 
+</style> 
+
+<script type="text/javascript"> 
+    function getLabel(id) { 
+      return document.getElementById(id); 
+    } 
+    function changeSec() { 
+      //得到myspan值，每秒减一，会进行隐士转换
+      getLabel('myspan').innerText=getLabel('myspan').innerText-1; 
+    }
+    var mytime = setInterval("changeSec()",1000); 
+    //五秒后跳转
+    function tiao() { 
+      clearInterval(mytime); 
+      //window.open("./welcome.html","_self"); 
+      window.location.href = "https://penglai.github.io/yindao";
+    } 
+
+    setTimeout("tiao()",5000); 
+</script> 
+ 
  </head> 
  <body id="v1"> 
   <canvas id="cvs" width="980" height="1442"></canvas> 
